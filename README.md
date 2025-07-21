@@ -1,14 +1,18 @@
-# Chatterbot-terminal-client
-In this assignment, I demonstrate what I know about ChatterBot—a machine-learning-based conversational dialog engine built in Python—by creating a pure-Python terminal client. This client trains on a corpus of **known** conversations and then launches a REPL so you can chat with the bot right in your terminal.
+# Django ChatterBot Terminal Client
+
+I built this project to give me a simple terminal-based chat interface backed by Django and ChatterBot. With one command, I can launch a REPL in my console and talk to my bot.
 
 ---
 
-## What I Know About ChatterBot
+## Features
 
-- **Data-driven responses**: ChatterBot learns reply patterns by training on existing “known” conversation corpora (e.g., greetings, small talk, FAQs).  
-- **Logic adapters**: It uses adapters like `BestMatch` to select the closest known response to your input.  
-- **Storage**: By default it persists its knowledge in a local SQLite database (`chatterbot.sqlite3`), so subsequent runs “remember” previous training.  
-- **Extensibility**: I can plug in additional corpora or custom conversation data to improve domain-specific responses.
+- I wrote a custom Django management command (`manage.py chat`) to run everything in the terminal.
+- I integrated **ChatterBot** with the **BestMatch** logic adapter.
+- I trained the bot on the standard English corpus so it can respond to basic greetings and small talk.
+- I kept the code modular and commented in first-person so it’s easy to follow what I did.
+
+
+
 
 
 
