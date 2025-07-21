@@ -1,0 +1,4 @@
+# I created this manifest to pin my project dependencies
+Django>=3.2
+chatterbot>=1.0.4
+chatterbot-corpus>=1.2.0
